@@ -27,7 +27,14 @@ public class VerPlan extends AppCompatActivity {
         View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea);
 
-        View linea1 = inflater.inflate(R.layout.linea_pierna, parent, false);
-        parent.addView(linea1);
+    }
+
+    public void nuevaPierna(View view){
+        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LinearLayout parent = findViewById(R.id.parent);
+
+        View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
+        parent.addView(linea);
+
     }
 }

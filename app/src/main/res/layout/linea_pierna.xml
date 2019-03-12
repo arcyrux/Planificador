@@ -2,62 +2,65 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="50dp"
+    android:layout_marginStart="2dp"
     android:orientation="horizontal">
 
     <Button
         android:id="@+id/btn_leg"
-        android:layout_width="@android:dimen/notification_large_icon_width"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_pierna" />
 
     <EditText
         android:id="@+id/textView2"
-        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_width="@dimen/view_width_medium"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="fill"
+        android:background="@drawable/border"
+        android:gravity="center"
         android:inputType="textUri"
         android:text="@string/text_origin" />
 
     <EditText
         android:id="@+id/textView20"
-        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_width="@dimen/view_width_medium"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="fill"
+        android:background="@drawable/border"
+        android:gravity="center"
         android:inputType="textUri"
         android:text="@string/text_destiny" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_radio"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_mag_course"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_altitud"
         android:textAlignment="center" />
 
@@ -68,130 +71,132 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="@android:dimen/notification_large_icon_height"
+            android:layout_width="@dimen/view_width_small"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
-            android:gravity="fill"
+            android:gravity="center"
             android:text="@string/text_direction"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="@android:dimen/notification_large_icon_height"
+            android:layout_width="@dimen/view_width_small"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/border"
-            android:gravity="fill"
+            android:gravity="center"
             android:text="@string/text_velocity"
             android:textAlignment="center" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_indicated_air_speed"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_true_air_speed"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_true_course"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_true_heading"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_magnetic_heading"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_compass_heading"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_distance"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_ground_speed"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
-        android:gravity="fill"
+        android:gravity="center"
         android:text="@string/text_estimated_time_enroute"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
+        android:gravity="center"
         android:text="@string/text_estimated_time_arrival"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="@android:dimen/notification_large_icon_height"
+        android:layout_width="@dimen/view_width_small"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@drawable/border"
+        android:gravity="center"
         android:text="@string/text_fuel"
         android:textAlignment="center" />
 
