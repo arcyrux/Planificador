@@ -20,4 +20,6 @@
     <string name="text_wind">Wind</string>
     <string name="text_direction">Dir</string>
     <string name="text_velocity">Vel</string>
+    <string name="text_origin">Origin</string>
+    <string name="text_destiny">Destiny</string>
 </resources>

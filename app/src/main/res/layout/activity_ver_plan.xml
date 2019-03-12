@@ -26,11 +26,19 @@ android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="@android:dimen/notification_large_icon_width"
+                android:layout_width="@android:dimen/thumbnail_width"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="fill"
-                android:text="@string/text_check_point" />
+                android:text="@string/text_origin" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="@android:dimen/thumbnail_width"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="fill"
+                android:text="@string/text_destiny" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -187,10 +195,17 @@ android:layout_height="match_parent">
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
         </ScrollView>
 
     </LinearLayout>

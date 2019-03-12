@@ -24,10 +24,10 @@ public class VerPlan extends AppCompatActivity {
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         LinearLayout parent = findViewById(R.id.parent);
 
-        View linea = inflater.inflate(R.layout.linea_pierna, null);
+        View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea);
 
-        View linea1 = inflater.inflate(R.layout.linea_pierna, null);
+        View linea1 = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea1);
     }
 }
