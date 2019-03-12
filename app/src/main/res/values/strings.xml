@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">Planificador</string>
     <string name="iniciar">Iniciar</string>
+    <string name="text_pierna">Leg</string>
+    <string name="text_check_point">Check Point</string>
+    <string name="text_radio">Radio</string>
+    <string name="text_mag_course">Mag Course</string>
+    <string name="text_altitud">Altitud</string>
+    <string name="text_indicated_air_speed">IAS</string>
+    <string name="text_true_air_speed">TAS</string>
+    <string name="text_true_course">TC</string>
+    <string name="text_true_heading">TH</string>
+    <string name="text_magnetic_heading">MH</string>
+    <string name="text_compass_heading">CH</string>
+    <string name="text_distance">DIST</string>
+    <string name="text_ground_speed">GS</string>
+    <string name="text_estimated_time_arrival">ETA</string>
+    <string name="text_estimated_time_enroute">ETE</string>
+    <string name="text_fuel">Fuel</string>
+    <string name="text_wind">Wind</string>
+    <string name="text_direction">Dir</string>
+    <string name="text_velocity">Vel</string>
 </resources>
