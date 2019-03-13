@@ -11,6 +11,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Button
+            android:id="@+id/btn_agregar_pierna"
+            android:layout_width="@dimen/view_width_large"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="nuevaPierna"
+            android:text="@string/agregar_pierna" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -214,27 +222,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <LinearLayout
+<!--            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal">-->
 
                 <LinearLayout
                     android:id="@+id/parent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"></LinearLayout>
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                </LinearLayout>
+
+            <!--</LinearLayout>-->
         </ScrollView>
-
-        <Button
-            android:id="@+id/btn_agregar_pierna"
-            android:layout_width="@dimen/view_width_large"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:onClick="nuevaPierna"
-            android:text="@string/agregar_pierna" />
 
     </LinearLayout>
 
