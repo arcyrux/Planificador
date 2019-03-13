@@ -23,4 +23,6 @@
     <string name="text_origin">Origin</string>
     <string name="text_destiny">Destiny</string>
     <string name="agregar_pierna">Add leg</string>
+    <string name="text_x">X</string>
+    <string name="remove_leg">Remove Leg</string>
 </resources>

@@ -5,5 +5,7 @@
     <dimen name="view_width_small">64dp</dimen>
     <dimen name="view_width_medium">96dp</dimen>
     <dimen name="view_width_large">128dp</dimen>
+    <dimen name="view_width_height_small">30dp</dimen>
+    <dimen name="view_width_height_medium">50dp</dimen>
 
 </resources>

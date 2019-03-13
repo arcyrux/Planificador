@@ -30,34 +30,41 @@ public class VerPlan extends AppCompatActivity {
 
         View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea);
-        Button btn_quitar_pierna = linea.findViewById(R.id.btn_quitar_pierna);
-        //parent.removeView(btn_quitar_pierna);
-        btn_quitar_pierna.setVisibility(View.GONE);
+
+//        Button btn_quitar_pierna = linea.findViewById(R.id.btn_quitar_pierna);
+//        btn_quitar_pierna.setVisibility(View.GONE);
 
     }
 
     public void nuevaPierna(View view){
+
+
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         parent = findViewById(R.id.parent);
-
-        //TODO Quitar las dos lineas debajo.
-        //Son un ejemplo de como hacer el recuento de views
-        int hijos = parent.getChildCount();
-        Toast.makeText(this, ""+hijos , Toast.LENGTH_LONG).show();
-
 
         View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea);
 
-        Button btn_quitar_pierna = linea.findViewById(R.id.btn_quitar_pierna);
+        int hijos = parent.getChildCount();
+        linea.setId(hijos);
 
+/*        Button btn_quitar_pierna = linea.findViewById(R.id.btn_quitar_pierna);
         btn_quitar_pierna.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View view) {
                 parent.removeView((View) view.getParent());
-
             }
-        });
+        });*/
+    }
+
+    public void quitarPierna(View view){
+
+        try {
+            int hijos = parent.getChildCount();
+            View linea = findViewById(hijos);
+            parent = findViewById(R.id.parent);
+            parent.removeView(linea);
+        }
+        catch(Exception e){}
     }
 }
