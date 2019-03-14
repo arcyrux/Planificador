@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -24,7 +23,7 @@
                 android:text="@string/agregar_pierna" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_remove_leg"
                 android:layout_width="@dimen/view_width_large"
                 android:layout_height="wrap_content"
                 android:onClick="quitarPierna"
@@ -240,64 +239,69 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">-->
 
+            <!--</LinearLayout>-->
             <LinearLayout
-                android:id="@+id/parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <LinearLayout
+                    android:id="@+id/parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="961dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/view_total_dist"
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="@dimen/view_width_height_small"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:text="@string/text_distance" />
+
+                    <TextView
+                        android:id="@+id/view_total_gs"
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="@dimen/view_width_height_small"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:text="@string/text_ground_speed" />
+
+                    <TextView
+                        android:id="@+id/view_total_ete"
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="@dimen/view_width_height_small"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:text="@string/text_estimated_time_enroute" />
+
+                    <TextView
+                        android:id="@+id/view_total_eta"
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="@dimen/view_width_height_small"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:text="@string/text_estimated_time_arrival" />
+
+                    <TextView
+                        android:id="@+id/view_total_fuel"
+                        android:layout_width="@dimen/view_width_small"
+                        android:layout_height="@dimen/view_width_height_small"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:text="@string/text_fuel" />
+
+                </LinearLayout>
             </LinearLayout>
-
-            <!--</LinearLayout>-->
         </ScrollView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/view_width_height_small"
-            android:layout_marginStart="961dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView30"
-                android:layout_width="@dimen/view_width_small"
-                android:layout_height="@dimen/view_width_height_small"
-                android:background="@drawable/border_bottom"
-                android:gravity="center"
-                android:text="@string/text_pierna" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="@dimen/view_width_small"
-                android:layout_height="@dimen/view_width_height_small"
-                android:background="@drawable/border_bottom"
-                android:gravity="center"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="@dimen/view_width_small"
-                android:layout_height="@dimen/view_width_height_small"
-                android:background="@drawable/border_bottom"
-                android:gravity="center"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="@dimen/view_width_small"
-                android:layout_height="@dimen/view_width_height_small"
-                android:background="@drawable/border_bottom"
-                android:gravity="center"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/textView28"
-                android:layout_width="@dimen/view_width_small"
-                android:layout_height="@dimen/view_width_height_small"
-                android:background="@drawable/border_bottom"
-                android:gravity="center"
-                android:text="TextView" />
-
-        </LinearLayout>
 
     </LinearLayout>
 

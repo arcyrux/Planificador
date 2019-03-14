@@ -64,7 +64,6 @@ public class VerPlan extends AppCompatActivity {
             View linea = findViewById(hijos);
             parent = findViewById(R.id.parent);
             parent.removeView(linea);
-        }
-        catch(Exception e){}
+        } catch(Exception ignored){}
     }
 }
