@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void iniciar(View view){
-        Intent intent = new Intent(this, VerPlan.class);
+        Intent intent = new Intent(this, VerPlanActivity.class);
         startActivity(intent);
     }
 

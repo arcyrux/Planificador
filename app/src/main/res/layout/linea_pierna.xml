@@ -40,7 +40,7 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="numberDecimal"
         android:textAlignment="center" />
 
     <TextView
@@ -60,7 +60,7 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="number"
         android:textAlignment="center" />
 
     <EditText
@@ -70,7 +70,7 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="number"
         android:textAlignment="center" />
 
     <EditText
@@ -80,7 +80,7 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="number"
         android:textAlignment="center" />
 
     <EditText
@@ -90,7 +90,7 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="number"
         android:textAlignment="center" />
 
     <TextView
@@ -120,7 +120,8 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="numberSigned"
+        android:text="0"
         android:textAlignment="center" />
 
     <EditText
@@ -130,7 +131,8 @@
         android:layout_weight="1"
         android:background="@drawable/border"
         android:gravity="center"
-        android:inputType="textNoSuggestions"
+        android:inputType="numberSigned"
+        android:text="0"
         android:textAlignment="center" />
 
     <TextView

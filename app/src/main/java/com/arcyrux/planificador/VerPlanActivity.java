@@ -9,9 +9,10 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class VerPlan extends AppCompatActivity {
+public class VerPlanActivity extends AppCompatActivity {
 
     private LinearLayout parent;
+    int hijos = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,6 @@ public class VerPlan extends AppCompatActivity {
         View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea);
 
-//        Button btn_quitar_pierna = linea.findViewById(R.id.btn_quitar_pierna);
-//        btn_quitar_pierna.setVisibility(View.GONE);
-
     }
 
     public void nuevaPierna(View view){
@@ -45,25 +43,36 @@ public class VerPlan extends AppCompatActivity {
         View linea = inflater.inflate(R.layout.linea_pierna, parent, false);
         parent.addView(linea);
 
-        int hijos = parent.getChildCount();
+        hijos = parent.getChildCount();
         linea.setId(hijos);
-
-/*        Button btn_quitar_pierna = linea.findViewById(R.id.btn_quitar_pierna);
-        btn_quitar_pierna.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                parent.removeView((View) view.getParent());
-            }
-        });*/
     }
 
     public void quitarPierna(View view){
 
         try {
-            int hijos = parent.getChildCount();
+            hijos = parent.getChildCount();
             View linea = findViewById(hijos);
             parent = findViewById(R.id.parent);
             parent.removeView(linea);
         } catch(Exception ignored){}
     }
+
+
+
+/*
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        // Make sure to call the super method so that the states of our views are saved
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("lineas", hijos);
+
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        savedInstanceState.getInt("lineas");
+    }*/
 }

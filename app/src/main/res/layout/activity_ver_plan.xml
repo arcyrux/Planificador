@@ -28,6 +28,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="quitarPierna"
                 android:text="@string/remove_leg" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="@dimen/view_width_large"
+                android:layout_height="wrap_content"
+                android:text="@string/calcular" />
         </LinearLayout>
 
         <LinearLayout
