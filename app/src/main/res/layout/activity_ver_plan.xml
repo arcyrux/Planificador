@@ -30,13 +30,14 @@
                 android:text="@string/remove_leg" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_calcular"
                 android:layout_width="@dimen/view_width_large"
                 android:layout_height="wrap_content"
                 android:text="@string/calcular" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/contenedor"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/view_width_height_medium"
             android:layout_marginStart="2dp"

@@ -1,7 +1,12 @@
 package com.arcyrux.planificador;
 
-public class Pierna {
+import android.os.Parcel;
+import android.os.Parcelable;
 
+public class Pierna implements Parcelable{
+
+    private String origen;
+    private String destino;
     private int legNumber;
     private float radio;
     private int magneticCourse;
@@ -20,6 +25,73 @@ public class Pierna {
     private long eta;
     private float fuel;
 
+
+    public Pierna(String origen, String destino, int legNumber, float radio, int magneticCourse,
+                  int altitud, int windDirection, int windVelocity, int ias, int tas,
+                  int trueCourse, int trueHeading, int magneticHeading, int compasHeading,
+                  float distance, int groundSpeed, long ete, long eta, float fuel) {
+        this.origen = origen;
+        this.destino = destino;
+        this.legNumber = legNumber;
+        this.radio = radio;
+        this.magneticCourse = magneticCourse;
+        this.altitud = altitud;
+        this.windDirection = windDirection;
+        this.windVelocity = windVelocity;
+        this.ias = ias;
+        this.tas = tas;
+        this.trueCourse = trueCourse;
+        this.trueHeading = trueHeading;
+        this.magneticHeading = magneticHeading;
+        this.compasHeading = compasHeading;
+        this.distance = distance;
+        this.groundSpeed = groundSpeed;
+        this.ete = ete;
+        this.eta = eta;
+        this.fuel = fuel;
+    }
+
+    public Pierna(int legNumber){
+
+        this.legNumber = legNumber;
+        this.origen = "";
+        this.destino = "";
+        this.legNumber = 0;
+        this.radio = 0;
+        this.magneticCourse = 0;
+        this.altitud = 0;
+        this.windDirection = 0;
+        this.windVelocity = 0;
+        this.ias = 0;
+        this.tas = 0;
+        this.trueCourse = 0;
+        this.trueHeading = 0;
+        this.magneticHeading = 0;
+        this.compasHeading = 0;
+        this.distance = 0;
+        this.groundSpeed = 0;
+        this.ete = 0;
+        this.eta = 0;
+        this.fuel = 0;
+
+    }
+
+
+    public String getOrigen() {
+        return origen;
+    }
+
+    public void setOrigen(String origen) {
+        this.origen = origen;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
 
     public int getLegNumber() {
         return legNumber;
@@ -156,4 +228,71 @@ public class Pierna {
     public void setFuel(float fuel) {
         this.fuel = fuel;
     }
+
+//    public void addLeg(){
+//        Pierna pierna = new Pierna();
+//        pierna.setLegNumber(getLargo());
+//        piernas.add(pierna);
+//    }
+
+
+    @Override
+    public int describeContents(){
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel out, int flags) {
+        out.writeString(origen);
+        out.writeString(destino);
+        out.writeInt(legNumber);
+        out.writeFloat(radio);
+        out.writeInt(magneticCourse);
+        out.writeInt(altitud);
+        out.writeInt(windDirection);
+        out.writeInt(windVelocity);
+        out.writeInt(ias);
+        out.writeInt(tas);
+        out.writeInt(trueCourse);
+        out.writeInt(trueHeading);
+        out.writeInt(magneticHeading);
+        out.writeInt(compasHeading);
+        out.writeFloat(distance);
+        out.writeInt(groundSpeed);
+        out.writeLong(ete);
+        out.writeLong(eta);
+        out.writeFloat(fuel);
+    }
+
+    public static final Parcelable.Creator<Pierna> CREATOR = new Parcelable.Creator<Pierna>() {
+                @Override
+                public Pierna createFromParcel(Parcel in) {return new Pierna(in);}
+                @Override
+                public Pierna[] newArray(int size) {return new Pierna[size];
+                }
+            };
+
+    private Pierna(Parcel in){
+        origen = in.readString();
+        destino = in.readString();
+        legNumber = in.readInt();
+        radio = in.readFloat();
+        magneticCourse = in.readInt();
+        altitud = in.readInt();
+        windDirection= in.readInt();
+        windVelocity = in.readInt();
+        ias= in.readInt();
+        tas= in.readInt();
+        trueCourse= in.readInt();
+        trueHeading= in.readInt();
+        magneticHeading= in.readInt();
+        compasHeading= in.readInt();
+        distance= in.readFloat();
+        groundSpeed= in.readInt();
+        ete= in.readLong();
+        eta= in.readLong();
+        fuel= in.readFloat();
+    }
+
+
 }
